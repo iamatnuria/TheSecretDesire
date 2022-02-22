@@ -1,0 +1,6 @@
+text-color: #dcd197
+menu-color: #180b2b
+
+square-gradient: #a1723a #e1cfc0 #a1723a
+
+button-border-color: #e8d08f
