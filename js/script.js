@@ -24,24 +24,24 @@ $(document).ready(function () {
     $(this).toggleClass("open");
   });
 
-  /*===== FRAGANCE REVEAL =====*/
+  /*===== fragrance REVEAL =====*/
   const srtop = ScrollReveal({
     origin: "top",
     distance: "0px",
     duration: 2000,
   });
 
-  srtop.reveal(`.fragance__container__top`, {
+  srtop.reveal(`.fragrance__container__top`, {
     interval: 1500,
     viewFactor: 0.5,
   });
 
-  srtop.reveal(`.fragance__container__middle`, {
+  srtop.reveal(`.fragrance__container__middle`, {
     interval: 1500,
     viewFactor: 0.7,
   });
 
-  srtop.reveal(`.fragance__container__bottom`, {
+  srtop.reveal(`.fragrance__container__bottom`, {
     interval: 1500,
     viewFactor: 0.9,
   });
