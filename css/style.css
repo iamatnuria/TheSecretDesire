@@ -8,7 +8,7 @@
     --main-background: #000106;
     --separator-color: #dcc489;
     --menu-color: #180b2b;
-    --body-color: #000000;
+    --body-color: #020203;
 
     /*========== Font and typography ==========*/
     --body-font: 'Open Sans', sans-serif;
@@ -317,7 +317,6 @@ img {
     background-color: transparent;
     position: absolute;
     z-index: 5;
-
 }
 
  .home__shadow {
@@ -368,6 +367,8 @@ img {
 
 .home__hashtag {
     margin-top: 8rem;
+    font-weight: 300;
+
 }
 
 .home__hashtag > span {
@@ -428,6 +429,13 @@ img {
     color: #280c3b;
 }
 
+.modal__button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+}
+
 .sense__word {
     text-align: center;
     font-size: 1.4rem;
@@ -454,7 +462,7 @@ img {
 
 .video__container .close {
     position: absolute;
-    top: 26%;
+    top: 32%;
     right: 7%;
     font-size: 20px;
     cursor: pointer;
@@ -712,14 +720,13 @@ img {
 /*==================== FOOTER SECTION ====================*/
 
 .colognes__section {
-
-    
+   
     width: 100%;
     height: auto;
 
     background-image: url("/img/fondo-footer.png");
     background-position: center center;
-
+    background-repeat: none;
     margin-top: 2rem;
 
     /* COVER REMOVED TO POSITION BACKGROUND BETTER */
@@ -852,10 +859,192 @@ img {
 /* For medium devices */
 @media screen and (min-width: 568px){
 
+    
+.home__text {
+    width: 350px;
+    padding: 50px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+}
+
+.home__square-1 {
+   position: absolute;
+    width: 350px;
+    height: 300px;
+    border: 2px solid var(--button-border-color);
+    transform: rotate(10deg);
+    background-color: transparent;
+}
+
+.home__square-2 {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    border: 2px solid var(--button-border-color);
+    transform: rotate(-5deg);
+    background-color: transparent;
+}
+
+.home__square-3 {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    border: 3px solid var(--button-border-color);
+    background-color: transparent;
+}
+
+.video__container .close {
+    position: absolute;
+    top: 25%;
+    right: 7%;
+    font-size: 20px;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
 }
 
 @media only screen and (min-width: 768px) {
 
+        
+.home__text {
+    width: 380px;
+    padding: 50px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+}
+
+.home__square-1 {
+   position: absolute;
+    width: 390px;
+    height: 340px;
+    border: 2px solid var(--button-border-color);
+    transform: rotate(10deg);
+    background-color: transparent;
+}
+
+.home__square-2 {
+    position: absolute;
+    width: 390px;
+    height: 340px;
+    border: 2px solid var(--button-border-color);
+    transform: rotate(-5deg);
+    background-color: transparent;
+}
+
+.home__square-3 {
+    position: absolute;
+    width: 390px;
+    height: 340px;
+    border: 3px solid var(--button-border-color);
+    background-color: transparent;
+}
+
+.video__container .close {
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    font-size: 20px;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.senses__grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+
+    gap: 20px;
+}
+
+.senses__box {
+    outline: 2px solid var(--button-border-color);
+    outline-offset: 5px;
+    width: 120px;
+    margin-bottom: var(--mb-2-5);
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+}
+
+.fragrance__description {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    position: relative;
+    left: -34%;
+    top: -5%;
+    font-size: 1.1rem;
+
+    height: 200px;
+}
+
+.fragrance__classification {
+    align-self: end;
+    color: white;
+}
+
+.note__item {
+    background-color: #dcd197;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px;
+}
+
+.notes__grid {
+    height: 80vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: absolute;
+    top: 33.5%;
+    left: 48%;
+
+    margin: 5rem 0;
+
+    z-index: 25;
+}
+
+.note__item2 {
+    margin-left: 250px;
+}
+
+.note__heading {
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: .9rem;
+    color: black;
+}
+
+.note__content {
+    color: black;
+    font-size: .8rem;
+}
 
 
     .colognes__grid {
@@ -868,6 +1057,104 @@ img {
 /* For large devices */
 @media screen and (min-width: 1024px){
 
+    
+.senses__grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+
+    gap: 40px;
+}
+
+.senses__box {
+    outline: 2px solid var(--button-border-color);
+    outline-offset: 5px;
+    width: 140px;
+    margin-bottom: var(--mb-2-5);
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+}
+
+    .senses__heading {
+       padding: 2.5rem 0rem;
+
+       margin-bottom: 4rem;
+    }
+
+    .senses__title {
+        font-weight: lighter;
+        font-size: calc(var(--big-font-size) + .5rem);
+    }
+    
+    .senses__subtitle {
+        font-weight: lighter;
+        font-size: var(--h1-font-size);
+    }
+
+
+    .video__container .close {
+        position: absolute;
+        top: 25%;
+        right: 14%;
+        font-size: 24px;
+        cursor: pointer;
+
+    }
+
+    .notes__grid {
+        height: 80vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        position: absolute;
+        top: 30.5%;
+        left: 47%;
+    
+        margin: 5rem 0;
+    
+        z-index: 25;
+    }
+
+    .note__item {
+        background-color: #dcd197;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        margin: 0px;
+    }
+
+    .note__item2 {
+        margin-left: 250px;
+    }
+
+    .note__heading {
+        font-weight: bold;
+        letter-spacing: -1px;
+        font-size: 1.2rem;
+        color: black;
+    }
+    
+    .note__content {
+        color: black;
+        font-size: 1.2rem;
+    }
 
 
     .colognes__heading {
@@ -898,4 +1185,58 @@ img {
         cursor: pointer;
         transform: scale(1.3);
     }
+
+    /* FRAGRANCE BOX FIX FOR LARGER DEVICES */
+
+    @media only screen and (min-width: 1400px) {
+
+        .video__container .close {
+            position: absolute;
+            top: 25%;
+            right: 19%;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .notes__grid {
+            height: 80vh;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        
+            position: absolute;
+            top: 28.5%;
+            left: 47%;
+        
+            margin: 5rem 0;
+        
+            z-index: 25;
+        }
+
+    }
+
+    @media only screen and (min-width: 1600px) {
+
+        .video__container .close {
+            position: absolute;
+            top: 25%;
+            right: 22%;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+
+    @media only screen and (min-width: 1820px) {
+
+        .video__container .close {
+            position: absolute;
+            top: 25%;
+            right: 26%;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+        
 }

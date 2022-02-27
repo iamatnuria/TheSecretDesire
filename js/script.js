@@ -51,6 +51,8 @@ $(document).ready(function () {
     viewFactor: 0.7,
   });
 
+  // GALLERY LOGIC
+
   const next_btn = document.querySelector("#button-next");
   const prev_btn = document.querySelector("#button-prev");
   const slider = document.querySelector(".slider");
@@ -71,19 +73,21 @@ $(document).ready(function () {
 
   projects.forEach(({ image }, i) => {
     const slide = document.createElement("img");
+    
     slide.classList.add("slider__slide");
     slide.classList.add("images");
     slide.src = image;
     if (i == 0) {
       first_slide = slide;
-
       slide.classList.add("active");
     }
 
     if (i + 1 == projects.length) {
       last_slide = slide;
     }
+
     slider.appendChild(slide);
+    
   });
 
   next_btn.addEventListener("click", () => {
@@ -98,8 +102,8 @@ $(document).ready(function () {
       sibling.classList.add("active");
     }
 
-    $(".slider > img:nth-child(1)").css({ "margin-left": +-80 + xpox + "%" });
   });
+
   prev_btn.addEventListener("click", () => {
     const active_slide = document.querySelector(".slider__slide.active");
     let sibling = active_slide.previousElementSibling;
@@ -114,6 +118,7 @@ $(document).ready(function () {
     }
   });
 
+  // VIDEO LOGIC
 
   const btn = document.querySelector('.btn');
   const videoContainer = document.querySelector('.video__container');
@@ -146,7 +151,6 @@ $(document).ready(function () {
   $('.btn').click(function(e){
     videoContainer.classList.add('show');
     vid.autoplay = true;
-    vid.muted = true;
     vid.load();
   });
 
