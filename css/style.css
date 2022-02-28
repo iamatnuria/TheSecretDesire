@@ -309,6 +309,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-top: 3rem;
 }
 
 .home__text {
@@ -1156,9 +1158,40 @@ img {
         font-size: 1.2rem;
     }
 
+    .fragrance__heading {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        position: relative;
+        top: -50px;
+        z-index: 20;
+    
+    }
+
 
     .colognes__heading {
         font-size: calc(var(--big-font-size) + 1rem);
+    }
+
+    .colognes__button {
+        padding: .9rem 2.4rem;
+        background-color: transparent;
+    
+        color: #e0c682;
+        font-family: var(--body-font);
+        font-size: 1.2rem;
+        font-weight: 300;
+    
+        border: 1px solid #e0c682;
+        border-width: 1px;
+        margin-top: 25px;
+        margin-bottom: 1rem;
+    
+        cursor: pointer;
+        transition: all .5s ease-in-out;
     }
 
     .colognes__grid {

@@ -73,7 +73,6 @@ $(document).ready(function () {
 
   projects.forEach(({ image }, i) => {
     const slide = document.createElement("img");
-    
     slide.classList.add("slider__slide");
     slide.classList.add("images");
     slide.src = image;
