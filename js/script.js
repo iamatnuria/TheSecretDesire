@@ -61,13 +61,13 @@ $(document).ready(function () {
   let last_slide;
   let projects = [
     {
-      image: "/img/_Z3A8097-3.png",
+      image: "img/_Z3A8097-3.png",
     },
     {
-      image: "/img/_Z3A8347-2.png",
+      image: "img/_Z3A8347-2.png",
     },
     {
-      image: "/img/_Z3A8704-2.png",
+      image: "img/_Z3A8704-2.png",
     },
   ];
 
