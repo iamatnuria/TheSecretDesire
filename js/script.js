@@ -76,6 +76,7 @@ $(document).ready(function () {
     slide.classList.add("slider__slide");
     slide.classList.add("images");
     slide.src = image;
+    slide.alt = "Imagen-galeria";
     if (i == 0) {
       first_slide = slide;
       slide.classList.add("active");
