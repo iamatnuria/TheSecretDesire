@@ -313,17 +313,17 @@ img {
 .nav__icon__close {
 }
 
-/* FIX BG-IMAGE */
-
 .home__section {
-  background: url("/img/her-secret-desire-bg.png") no-repeat center top fixed;
+  background: url("/img/her-secret-desire-bg.png") no-repeat center top;
   background-size: cover;
   width: 100%;
+  height: 90vh;
+  max-height: 90vh;
 }
 
 .home__container {
   width: 100%;
-  height: 90vh;
+  height: 100%;
 }
 
 .home__content {
@@ -760,13 +760,14 @@ img {
   background-image: url("/img/fondo-footer.png");
   background-position: center center;
   background-repeat: none;
+  background-size: cover; 
+  image-rendering: -webkit-optimize-contrast;
   margin-top: 2rem;
-
-  /* COVER REMOVED TO POSITION BACKGROUND BETTER */
-  /* background-size: cover; */
+  
 }
 
 .colognes__container {
+
   display: flex;
   flex-direction: column;
 
@@ -1081,7 +1082,7 @@ img {
     justify-content: space-evenly;
 
     position: absolute;
-    top: 72rem;
+    top: 35%;
     left: 48%;
 
     margin: 5rem 0;
@@ -1184,7 +1185,7 @@ img {
     justify-content: space-evenly;
 
     position: absolute;
-    top: 72rem;
+    top: 32.5%;
     left: 47%;
 
     margin: 5rem 0;
@@ -1338,7 +1339,7 @@ img {
       justify-content: space-evenly;
 
       position: absolute;
-      top: 32%;
+      top: 32.5%;
       left: 47%;
 
       margin: 5rem 0;
@@ -1355,6 +1356,14 @@ img {
       font-size: 24px;
       cursor: pointer;
     }
+
+    .button__prev {
+      margin-left: 4%;
+    }
+    
+    .button__next {
+      margin-right: 4%;
+    }
   }
 
   @media only screen and (min-width: 1820px) {
@@ -1364,6 +1373,14 @@ img {
       right: 26%;
       font-size: 24px;
       cursor: pointer;
+    }
+
+    .button__prev {
+      margin-left: 7%;
+    }
+    
+    .button__next {
+      margin-right: 7%;
     }
   }
 }
