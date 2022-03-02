@@ -57,6 +57,12 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   background-color: var(--main-background);
+
+/* Transition added for some smooth responsive changes */
+
+  transition: all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out; 
+   	-webkit-transition:all .5s ease-in-out;
 }
 
 main {
@@ -133,6 +139,10 @@ img {
   align-content: center;
   align-items: center;
   text-align: center;
+}
+
+.nav {
+  padding-top: 4rem;
 }
 
 .nav__menu {
